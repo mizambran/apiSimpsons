@@ -1,0 +1,10 @@
+Método fetch("URLbase")
+
+Ejemplo:  fetch("https://thesimpsonsapi.com/api/characters")   ==> API de los Simpsons , aquí estoy llamando a los personajes
+
+
+en PostMan también podemos validar la conexión con la API;
+
+
+
+

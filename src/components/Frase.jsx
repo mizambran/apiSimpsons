@@ -1,22 +1,28 @@
-import Card from 'react-bootstrap/Card';
+import Card from "react-bootstrap/Card";
 
+const Frase = ({ frase }) => {
+ 
 
-
-const Frase = () => {
+    
   return (
     <div>
-        {/* <img src="" alt="" /> */}
-      <Card className='text-center' >
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-      </Card.Body>
-    </Card>
+      <img
+        src={`https://cdn.thesimpsonsapi.com/${200}${frase.portrait_path}`}
+        alt="" 
+        
+      />
+      <Card className="text-center">
+        <Card.Body>
+          <Card.Title>
+            {frase.name} 
+            </Card.Title>
+          <Card.Text>
+            {frase.phrases}
+            </Card.Text>
+        </Card.Body>
+      </Card>
     </div>
-  )
-}
+  );
+};
 
-export default Frase
+export default Frase;
